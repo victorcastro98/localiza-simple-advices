@@ -18,9 +18,9 @@ Definitivamente é uma aplicação fora de qualquer padrão, você tem a liberda
 
 ## Tarefas
 
-- [ ] Componentizar a aplicação, aplicando boas práticas de desenvolvimento
-- [ ] Substituir class component por functional component (atualmente no Main.jsx)
-- [ ] Possibilitar a busca de conselhos por texto
+- [X] Componentizar a aplicação, aplicando boas práticas de desenvolvimento
+- [X] Substituir class component por functional component (atualmente no Main.jsx)
+- [X] Possibilitar a busca de conselhos por texto
 - [ ] Estilizar a aplicação (CSS modules, styled-components, tailwindcss, Bootstrap, MaterialUI, etc)
 
 ## Extras
