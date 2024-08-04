@@ -1,10 +1,10 @@
 import { IUseAdivice } from 'src/types/useAdvices.structure';
-import { loadAdvice } from '../services/adviceService';
+import { getAdvice } from '../services/getAdvice';
 
 const useHandleMoreAdvice = ({setAdvice, setLoading}: IUseAdivice) => {
   const handleMore = async () => {
     setLoading(true)
-    const adviceText = await loadAdvice();
+    const adviceText = await getAdvice();
     setAdvice(adviceText);
     setLoading(false)
   };
