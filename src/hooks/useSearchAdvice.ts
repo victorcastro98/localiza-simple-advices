@@ -6,7 +6,6 @@ const useSearchAdvice = ({setAdvice, setLoading, searchText}: IUseSearchAdivice)
     const fetchSearch = async () => {
         setLoading(true)
         const searchedAdviceText = await getSearchedAdvice(searchText);
-        console.log("searchedAdviceText: ", searchedAdviceText)
         if(searchedAdviceText === undefined) {
           setLoading(false)
           return setAdvice("Error finding advice, please search another term!");
