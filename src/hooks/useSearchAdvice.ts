@@ -6,6 +6,10 @@ const useSearchAdvice = ({setAdvice, setLoading, searchText}: IUseSearchAdivice)
     const fetchSearch = async () => {
         setLoading(true)
         const searchedAdviceText = await getSearchedAdvice(searchText);
+        if(searchedAdviceText === undefined) {
+          setLoading(false)
+          return setAdvice("Error finding advice, please search another term!");
+        }
         const randomIndex = Math.floor(Math.random() * searchedAdviceText.length);
         setAdvice(searchedAdviceText[randomIndex].advice);
         setLoading(false)
