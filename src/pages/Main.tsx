@@ -17,7 +17,7 @@ const Main: React.FC = () => {
   return (
     <div className="w-full flex flex-col items-center justify-evenly gap-9 py-6">
       <div className="text-3xl md:text-6xl text-white text-center">
-        {loading ? <div>loading...</div> : <p>{advice}</p>}
+        {loading ? <div>loading...</div> : <p>{advice ?? "No advices found, serach another topic"}</p>}
       </div>
 
       <div className="w-full flex flex-row gap-2 justify-center">
