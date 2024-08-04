@@ -28,3 +28,7 @@ Definitivamente é uma aplicação fora de qualquer padrão, você tem a liberda
 - Utiliza TypeScript
 - Implementar testes unitários
 - Containerizar a aplicação
+
+# Comentário do desenvolvedor
+
+- Versão Node utilizada 17.0.0
